@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-eval' 'wasm-unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; connect-src 'self' blob:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'">
+  <title>快快樂樂學倉頡 · 原版 DOS</title>
+  <link rel="stylesheet" href="./vendor/js-dos.css">
+  <link rel="stylesheet" href="./player.css">
+  <script src="./vendor/js-dos.js" defer></script>
+  <script src="./player.js?v=6" defer></script>
+</head>
+<body>
+  <header><div><span class="tag">LOCAL DOS EMULATOR</span><h1>快快樂樂學倉頡</h1><p>直接執行原始 DOS 程式 · js-dos / DOSBox WebAssembly</p></div><a href="../#tutorial" target="_blank" rel="noopener">返回 HappyCJ ↗</a></header>
+  <main>
+    <section class="toolbar" aria-label="啟動設定"><label>啟動方式 <select id="launch"><option value="intro">完整啟動 · OPEN.EXE</option><option value="direct">直接進入 · HPCJ.EXE</option><option value="prompt">DOS 命令列</option></select></label><button id="start">啟動 CJ</button><button id="save" disabled>儲存模擬磁碟</button><button id="fullscreen" disabled>全螢幕</button><span id="status" role="status">準備就緒，按「啟動 CJ」。</span></section>
+    <div id="dos" tabindex="0" aria-label="DOS CJ 畫面"><div id="welcome"><span>倉</span><h2>1992，現在開機。</h2><p>請按上方「啟動 CJ」。點一下 DOS 畫面後，即可使用鍵盤。</p></div></div>
+    <section class="keys" aria-label="DOS 特殊按鍵"><span>特殊按鍵</span><button data-key="32" disabled>Space</button><button data-key="257" disabled>Enter</button><button data-key="256" disabled>Esc</button><button data-key="290" disabled>F1</button><button data-key="291" disabled>F2</button><button data-key="292" disabled>F3</button><button data-key="293" disabled>F4</button><button data-key="294" disabled>F5</button><button data-key="295" disabled>F6</button><button data-key="296" disabled>F7</button><button data-key="297" disabled>F8</button><button data-key="298" disabled>F9</button><button data-key="299" disabled>F10</button><button data-key="265" disabled>↑</button><button data-key="264" disabled>↓</button><button data-key="263" disabled>←</button><button data-key="262" disabled>→</button></section>
+    <p class="note">鍵盤請切到英文輸入法。Mac 的 F1–F10 可用上方按鈕。程式內的中文由原始字型繪製，不需要安裝中文 DOS。</p>
+    <p class="note">磁碟資料使用原檔的本機副本；儲存只會寫入此瀏覽器的 IndexedDB。關閉前可按「儲存模擬磁碟」。所有執行資源都由同一網站提供。</p>
+    <details><summary>啟動說明與診斷</summary><p>「完整啟動」先執行原始 OPEN.EXE；若片頭未接續主程式，可換「直接進入」。HPCJ 原檔沒有副檔名，模擬磁碟另有內容完全相同的 HPCJ.EXE 別名。原始 legacy/CJ 資料夾不會被修改。</p><p>命令列模式會進入 C:\HAPPYCJ，可輸入 <code>OPEN</code> 或 <code>HPCJ</code>。切換啟動方式前建議先儲存。</p><p>模擬器來源：<a href="https://js-dos.com/v7/build/" target="_blank" rel="noopener">js-dos 官方 v7 執行資源</a>。尚未驗證的 DOS 行為以畫面與實際操作為準。</p><pre id="log" aria-label="模擬器日誌">等待啟動…</pre></details>
+  </main>
+</body>
+</html>

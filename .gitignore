@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+node_modules/
+dist/
+emulator/www/
+research/extracted/inventory.json
+research/extracted/summary.json
+.openai/
+.env
+.env.*
+*.log
