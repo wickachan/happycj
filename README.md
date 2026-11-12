@@ -1,5 +1,7 @@
 # HappyCJ · 快快樂樂學倉頡
 
+**[立即試用線上版 →](https://wickachan.github.io/happycj/)**　不需安裝，直接在瀏覽器開啟。
+
 HappyCJ 把經典 DOS CJ 倉頡學習程式整理成一個可在瀏覽器使用的中文輸入學習網站。它把現代化的倉頡練習、原版入門內容，以及原始 DOS 程式的 WebAssembly 模擬器放在同一個介面裡。
 
 ## 專案特色
@@ -82,6 +84,8 @@ npm run dev
 ## English version
 
 # HappyCJ · 快快樂樂學倉頡
+
+**[Live demo →](https://wickachan.github.io/happycj/)**　Open the complete web app in your browser without installing anything.
 
 HappyCJ turns the classic DOS CJ Cangjie learning program into a browser-based Chinese input trainer. It combines a modern practice room, rewritten introductory lessons, and the original DOS application running through an embedded js-dos / DOSBox WebAssembly emulator.
 
